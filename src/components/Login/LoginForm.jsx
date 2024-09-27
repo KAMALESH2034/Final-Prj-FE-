@@ -4,6 +4,7 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { API } from "../../global.jsx";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import download from "../../assets/download.png"
 
 export function LoginForm() {
 
@@ -69,14 +70,36 @@ export function LoginForm() {
                                 </Form.Item>
                             </Form>
                         </div>
-                        <div className="loginDescription">
-                            <span>
-                                Zoomcar's website offers a seamless self-drive car rental experience across various Indian cities. Users can easily book cars by selecting their city, rental duration, and preferred car type, with options ranging from hatchbacks to SUVs and luxury vehicles. Flexible rental plans include hourly, daily, weekly, and monthly options to suit individual needs and budgets. Convenient features such as account management, pickup and drop-off location selection, and multiple payment methods enhance the user experience. The website provides comprehensive vehicle information, user reviews, and detailed rental policies. It also highlights current promotional offers and discounts. For customer support, FAQs, chat assistance, and a helpline are available. Zoomcar prioritizes safety and hygiene measures to ensure a secure rental experience.
-                            </span>
-                        </div>
+                        
                     </div>
                 </Col>
             </Row>
+            <div className="Description px-4 py-5">
+                            <span>
+                            Zoomcar is the leading marketplace for car sharing in emerging markets,with over 20,000 cars on its technology-driven platform 
+                            across India, Indonesia, and Egypt. Zoomcar empowers host entrepreneurs to safely and easily share their cars to earn additional 
+                            passive income. Guests in the Zoomcar community enjoy a diverse, affordable selection of cars to unlock memorable driving experiences
+                             with friends and family. Founded in 2013 and headquartered in Bengaluru, India, Zoomcar employs over 250 people and operates in over 
+                             45 cities across India, Indonesia, and Egypt. Uri Levine, the co-founder of mobility unicorns Waze and Moovit, currently serves as 
+                             Zoomcar's Chairman of the Board.
+                                </span>
+                        </div>
+                        <div className="Description2">
+                           <div className="row">
+                            <div className="col-md-6 d-flex justify-content-center align-items-center">
+                                NEVER STOP <br/>LIVING
+                            </div>
+                            <div className="col-md-6 d-flex pt-4 justify-content-center align-items-center">
+                                    <p>
+                                        <img src={download} height="60px" width="60px" className="mx-3" alt="" />
+                                    DOWNLOAD ZOOMCAR APP<br/>
+                                    We have incredible offers, discounts & much more in our app.
+                                    </p>
+                            </div>
+
+                           </div>
+                        </div>
+       
         </>
     );
 }

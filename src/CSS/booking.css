@@ -76,6 +76,14 @@ background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(
     padding-left: 20px;
     padding-right: 10px;
     border-radius: 2px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    font-weight:bold;
+
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(73, 71, 71);
+
+
 }
 
 .user-name p {
@@ -214,6 +222,7 @@ background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(
     margin-bottom: 5px;
     padding-left: 40px;
     padding-right: 40px;
+    font-size: 1.2vw;
 }
 .editBooking-content {
     width: 100%;
@@ -241,8 +250,15 @@ background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(
 }
 
 .input-date {
-    border-radius: 10px;
-    background-color: rgb(211, 219, 112);
+    border-radius: 3px;
+    background-color: rgb(242, 243, 235);
+    height: 30px;
+    width: 80%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 1.2vw;
+
 }
 
 

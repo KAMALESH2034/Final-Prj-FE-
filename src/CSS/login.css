@@ -79,16 +79,24 @@
     color: rgb(133, 224, 42);
 }
 
-.loginDescription {
+.Description {
+    background-color: black;
     display: flex;
     justify-content: center;
     padding-left: 5vw;
     padding-right: 5vw;
 }
 
-.loginDescription span {
+.Description span {
     text-align: center;
-    color: rgb(53, 74, 74);
+    color: rgb(218, 239, 239);
+}
+.Description2{
+    background-color: rgb(70, 82, 82);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .RegisterFormpage {
@@ -115,7 +123,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 75px;
+    margin-top: 55px;
 }
 
 

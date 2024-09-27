@@ -22,7 +22,10 @@ export function Payment() {
             currency,
             amount,
         }
-        try {
+        alert("Payment Successfully")
+        navigate("/review", { state: { userdata: userdetails, vehicledata: vehicle } })
+
+      /*  try {
             const response = await axios.post(`${API}/payment/add-payment`, paymentdetails);
             const Order = await response.data
 
@@ -49,7 +52,8 @@ export function Payment() {
 
         } catch (error) {
             console.error('Error creating Razorpay order:', error.message);
-        }
+        }**/
+
     }
 
     return <>
@@ -97,6 +101,7 @@ export function Payment() {
                     </form>
                 </div>
             </div>
+            
         </div>
     </>
 }

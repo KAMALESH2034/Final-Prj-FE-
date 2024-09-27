@@ -12,6 +12,7 @@ export function Review() {
             </div>
             <Routes>
                 <Route path="/" element={<Reviewpage />} />
+                
                 <Route path="/read-review" element={<ReadReview />} />
             </Routes>
         </div>

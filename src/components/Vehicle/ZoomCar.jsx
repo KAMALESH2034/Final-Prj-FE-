@@ -194,7 +194,7 @@ export function ZoomCar() {
                               <div className="review-button">
                                 <button  className="btn btn-outline-success"
                                 onClick={() => haldleReview(res)} 
-                                ><u>reviews</u></button>
+                                ><u>reviews ⭐</u></button>
                               </div>
                             </div>
                             <div className="year-catego-price">
@@ -219,7 +219,19 @@ export function ZoomCar() {
           </div>
         </div>
       </Col>
+      <div className="Description px-4 py-5">
+                            <span>
+                            Zoomcar is the leading marketplace for car sharing in emerging markets,with over 20,000 cars on its technology-driven platform 
+                            across India, Indonesia, and Egypt. Zoomcar empowers host entrepreneurs to safely and easily share their cars to earn additional 
+                            passive income. Guests in the Zoomcar community enjoy a diverse, affordable selection of cars to unlock memorable driving experiences
+                             with friends and family. Founded in 2013 and headquartered in Bengaluru, India, Zoomcar employs over 250 people and operates in over 
+                             45 cities across India, Indonesia, and Egypt. Uri Levine, the co-founder of mobility unicorns Waze and Moovit, currently serves as 
+                             Zoomcar's Chairman of the Board.
+                                </span>
+                        </div>
+                        
     </Row>
+    
   </>
 }
 
