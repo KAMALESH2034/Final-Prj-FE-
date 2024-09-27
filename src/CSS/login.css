@@ -117,6 +117,8 @@
     font-weight: bold;
     
     color: green; 
+    text-shadow:  2px 2px 2px rgb(73, 71, 71);
+    
 }
 
 .registerform {
