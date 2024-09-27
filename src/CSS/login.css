@@ -1,0 +1,171 @@
+.LoginFormpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/login_img.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.loginnav {
+    padding-top: 1%;
+    padding-bottom: 3%;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 20px;
+    height: 40px;
+}
+
+.loginnav button {
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    font-size: 1.5vw;
+    border-color: aqua;
+    color: white;
+    border: none;
+}
+
+.loginnav button:hover {
+    color: aqua;
+}
+
+
+.loginheading {
+    text-align: center;
+}
+.loginSubheading{
+    text-align: center;
+    color: rgb(133, 224, 42);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:  2px 2px 2px rgb(73, 71, 71);
+}
+
+.loginheading p {
+    font-size: 12vh;
+    font-weight: bold;
+    
+    color: green;
+}
+
+.loginform {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.login-form {
+    max-width: 400px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-forgot {
+    float: left;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.registernow {
+    color: rgb(133, 224, 42);
+}
+
+.loginDescription {
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.loginDescription span {
+    text-align: center;
+    color: rgb(53, 74, 74);
+}
+
+.RegisterFormpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/register_img.avif");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Registerheading {
+    text-align: center;
+}
+
+.Registerheading p {
+    font-size: 12vh;
+    font-weight: bold;
+    
+    color: green; 
+}
+
+.registerform {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+
+.registerRole .ant-form-item-label>label {
+    font-size: 1.5vw;
+    color: rgb(212, 255, 22);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow:  2px 2px 2px rgb(73, 71, 71);
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+   
+    text-align: center;
+
+}
+
+.register-button {
+   width: 10vw;
+    height: 3vw;
+    background-color: green;
+    color: rgb(15, 15, 15);
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.registerDescription {
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 10px;
+}
+
+.registerDescription span {
+    text-align: center;
+    color: rgb(7, 99, 99);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+@media screen and (max-width: 576px) {
+    .register-button {
+        width: 10vw;
+        height: 5vw;
+        background-color: rgb(212, 255, 22);
+        color: rgb(15, 15, 15);
+        font-size: 1.5vw;
+    }
+
+}

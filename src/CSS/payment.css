@@ -1,0 +1,186 @@
+.Paymentpage {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+
+.payment-card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.payment-form {
+    position: relative;
+    width:25%;
+    background: #cae6df;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    transform-origin: center bottom;
+    transform: scale(1);
+    opacity: 0.9rem;
+}
+.pay-card-details{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.payment-nav {
+    background-color: rgb(48, 63, 44);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 41%;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.payment-nav button {
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    color: rgb(176, 247, 33);
+    border: none;
+}
+
+.payment-nav p {
+    font-size: 1.5vw;
+    color: rgb(23, 237, 16);
+}
+.paymentHeading{
+    text-align: center;
+    color: rgb(26, 223, 26);
+    padding-top: 10px;
+    
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 40px;
+    background-color: rgb(0, 143, 146);
+    
+}
+
+.heading p {
+    margin: 0%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.paymentname {
+    margin-top: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.paymentname label b {
+    color: rgb(12, 12, 12);
+}
+
+.paymentname label {
+    color: rgb(63, 115, 247);
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.paymentbrand {
+    margin-top: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.paymentbrand label b {
+    color: rgb(12, 12, 12);
+}
+
+.paymentbrand label {
+    color: rgb(63, 115, 247);
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.paymentamount {
+    margin-top: 10%;
+    display: flex;
+    gap: 10px;
+}
+
+.paymentamount label b {
+    color: rgb(12, 12, 12);
+}
+
+.paymentamount label {
+    color: rgb(63, 115, 247);
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.paymentcurrency {
+    margin-top: 10%;
+}
+
+.paymentcurrency label {
+    display: flex;
+    gap: 10px;
+}
+
+.paymentcurrency label b {
+    color: rgb(12, 12, 12);
+}
+
+.paymentButton {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.paymentButton button {
+    height: 20%;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 3%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.paymentButton button:hover {
+   
+    height: 20%;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(66, 179, 6);
+    color: white;
+    border: none;
+    padding: 3%;
+    border-radius: 10px;
+}

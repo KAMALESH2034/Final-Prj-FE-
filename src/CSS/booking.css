@@ -1,0 +1,299 @@
+body{
+    background: rgb(249,233,245);
+background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(147,252,251,0.5664390756302521) 98%);
+}
+
+.bookingpage {
+    width: 100%;
+    height: 100vh;
+      
+}
+
+.booking-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.select-booking {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-nav {
+   background-color:  rgb(86, 83, 83);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.booking-nav button {
+    height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    color: rgb(26, 223, 26);
+    border: none;
+}
+
+
+.booking-nav p {
+    height: 25px;
+    font-size: 1.5vw;
+    color: rgb(26, 223, 26);
+    font-weight: 700;
+}
+
+.booking-form {
+    position: relative;
+    width:39%;
+    background: #cae6df;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    transform-origin: center bottom;
+    transform: scale(1);
+    opacity: 0.9rem;
+}
+
+.user-name {
+    background-color: green;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 2px;
+}
+
+.user-name p {
+    display: flex;
+    text-align: justify;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.button-submit {
+    background-color: rgb(232, 9, 229);
+    color: beige;
+}
+
+.readBooking {
+    width: 100%;
+    height: 100%;
+}
+.readBookingTitle{
+    text-align: center;
+    color: rgb(26, 223, 26);
+    padding: 10px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.readBookingCard .item {
+    margin: 2%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+
+    gap: 20px;
+    
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.bookingCard {
+    position: relative;
+    width:25%;
+    background: #cae6df;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    transform-origin: center bottom;
+    transform: scale(1);
+    opacity: 0.9rem;
+}
+
+.bookedName {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.bookedBrand {
+    text-align: center;
+    color: blue;
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: 700;
+    font-size: 1.5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.bookedDates {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.booketotalRent {
+    text-align: center;
+    color: rgb(76, 0, 255);
+    margin-bottom: 10px;
+    font-size: medium;
+    font-weight: 700;
+    font-size: 1.5vw;
+
+}
+
+.bookedPay {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bookedPay button {
+    background-color: red;
+    color: azure;
+    margin-top: 3%;
+    height: 30%;
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.bookedPay button:hover {
+    background-color: rgb(9, 151, 9);
+}
+
+.edit-delete {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.edit-delete {
+    cursor: pointer;
+}
+
+.star-end-date{
+    margin-top: 12px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.editBooking-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    margin-right: 10%;
+    padding-right: 2px;
+}
+
+.button-submit {
+    width: 130%;
+    margin-top: 10px;
+}
+
+.editBookin-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-date {
+    border-radius: 10px;
+    background-color: rgb(211, 219, 112);
+}
+
+
+@media screen and (max-width: 576px) {
+    .booking-form {
+        width: 100%;
+        height: auto;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .readBookingCard .item {
+        margin: 0%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .bookingCard {
+        width: 100%;
+        height: auto;
+    }
+
+    .star-end-date {
+        padding-top: 5%;
+        margin-top: 10%;
+        display: flex;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-right: 15%;
+    }
+
+    .user-name p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        justify-content: center;
+        padding-right: 15px;
+    }
+
+    .button-submit {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
