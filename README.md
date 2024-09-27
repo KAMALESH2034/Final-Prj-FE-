@@ -1,8 +1,19 @@
-# React + Vite
+# Zoom Car clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##### Description :
 
-Currently, two official plugins are available:
+* Design and develop an Application using the full-stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Project Title :**
+
+    AutoShare - Zoom Car clone
+
+**Project Description:**
+
+**Frontend Development:**
+
+* Use React for building a dynamic and interactive UI.
+* Create separate components for the login and registration forms.
+* Use React state and Formik to manage form inputs and validation messages.
+* Utilize React Router for handling client-side routing.
+* Implement Redux or the Context API for state management across the application.
