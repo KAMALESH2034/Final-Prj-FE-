@@ -62,6 +62,7 @@ export function Bookingpage() {
             vehicle,
             startDate,
             endDate,
+           
             totalPrice
         }
 
@@ -85,7 +86,7 @@ export function Bookingpage() {
                 <Form
                     {...formItemLayout}
                     onFinish={handlesubmit}
-                    initialValues={{ startDate: "", endDate: "" }}
+                    initialValues={{ startDate: "", endDate: ""}}
                     variant="filled"
                     className="booking-form"
                 >
@@ -100,7 +101,7 @@ export function Bookingpage() {
                             rules={[
                                 {
                                     required: true,
-                                    message: 'Please input!',
+                                    message: 'Please select date!',
                                 },
                             ]}
                         >
@@ -113,12 +114,14 @@ export function Bookingpage() {
                             rules={[
                                 {
                                     required: true,
-                                    message: 'Please input!',
+                                    message: 'Please select date!',
                                 },
                             ]}
                         >
                             <input type="date" required min={present} className='input-date' />
                         </Form.Item>
+
+                       
                     </div>
                     <div className="button">
                         <Form.Item

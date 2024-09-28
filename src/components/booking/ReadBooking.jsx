@@ -93,7 +93,7 @@ export function ReadBooking() {
                   <div className="startDate"><b>Start Date:</b> {handelstarDate(res.startDate)}</div>
                   <div className="endDate"><b>End Date:</b> {handelendDate(res.endDate)}</div>
                 </div>
-                <div className="booketotalRent"><b>Rent - </b><b>{res.totalPrice ?? 'Please Clik Pay to finish your Booking'}</b></div>
+                <div className="booketotalRent"><b>Rent - ₹. </b><b>{res.totalPrice ?? 'Please Clik Pay to finish your Booking'}</b></div>
                 <div className="bookedPay">
                   <button onClick={() => handlepay(res)} >PAY</button>
                 </div>

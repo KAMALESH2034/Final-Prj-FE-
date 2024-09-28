@@ -12,9 +12,13 @@ export function ReadReview() {
 
   const getReviews = async () => {
     try {
+      console.log('fetching');
       const reviewData = await Promise.all(
+        
         vehicleData.review.map(async (ID) => {
+          
           const response = await axios.get(`${API}/review/get-review/${ID}`);
+          console.log('Review Data:', response.data);
           return response.data;
         })
       );

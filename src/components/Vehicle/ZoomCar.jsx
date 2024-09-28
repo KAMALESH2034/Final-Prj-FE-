@@ -110,8 +110,8 @@ export function ZoomCar() {
     }
   }
 
-  const haldleReview = (booking) => {
-    if (booking.review.length !== 0) {
+  const handleReview = (booking) => {
+    if (booking.review.length !== 0) {   
       navigate("/review/read-review", { state: { vehicleData: booking, brand: booking.brand } })
     }
     else {
@@ -160,7 +160,8 @@ export function ZoomCar() {
                     </div>
                     
                     <div className="bookinkCart">
-                      <button type="button" className="btn btn-primary position-relative" onClick={() => {
+                      <button type="button" className="btn btn-primary position-relative"
+                       onClick={() => {
                         if (cartItem.length == 0) {
                           alert("Please Book your Car to view the BOOKING")
                         }
@@ -193,7 +194,7 @@ export function ZoomCar() {
                               </div>
                               <div className="review-button">
                                 <button  className="btn btn-outline-success"
-                                onClick={() => haldleReview(res)} 
+                                onClick={() => handleReview(res)} 
                                 >reviews ⭐</button>
                               </div>
                             </div>
