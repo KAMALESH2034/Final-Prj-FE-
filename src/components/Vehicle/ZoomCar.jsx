@@ -155,12 +155,14 @@ export function ZoomCar() {
                     <img src={ZooMLogo} className=" nav_logo" />
                     <div className="search_box">
                       <div className="search-input">
-                        <input type="text" placeholder="Search your desire car here" value={search} onChange={handleSearch} />
+                        <input type="text" placeholder=" 🔍Search your Ride here" value={search} onChange={handleSearch} />
                       </div>
                     </div>
                     
                     <div className="bookinkCart">
-                      <button type="button" className="btn btn-primary position-relative"
+                      <button 
+                      type="button" 
+                      className="btn zoomBookingNav position-relative"
                        onClick={() => {
                         if (cartItem.length == 0) {
                           alert("Please Book your Car to view the BOOKING")
@@ -193,9 +195,7 @@ export function ZoomCar() {
                                 - <div className="productModel"><b>{res.model}</b></div>
                               </div>
                               <div className="review-button">
-                                <button  className="btn btn-outline-success"
-                                onClick={() => handleReview(res)} 
-                                >reviews ⭐</button>
+                                
                               </div>
                             </div>
                             <div className="year-catego-price">
@@ -203,7 +203,13 @@ export function ZoomCar() {
                               <div className="productCategory"><b>Model</b> - <p><b>{res.category}</b></p></div>
                               <div className="productPriceperday"><b>RENT PER DAY</b> -  <i className="fa fa-inr" aria-hidden="true"> <b>{res.pricePerDay}</b></i></div>
                               <div className="productButton">
-                                <button onClick={() => handelBooknow(res)} >Book Now</button>
+                                <button 
+                                 className="btn"
+                                  onClick={() => handleReview(res)} 
+                                  >reviews ⭐</button>
+                                  <button 
+                                  className="btn btnBookNow"
+                                  onClick={() => handelBooknow(res)} >Book Now</button>
                               </div>
                             </div>
                           </div>

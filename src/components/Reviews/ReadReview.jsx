@@ -36,22 +36,53 @@ export function ReadReview() {
   }, [vehicleData]);
 
   return (
+    <div className='container'>
+        <div className='review-heading p-3'>
+          <button 
+          className='btn btn-dark px-4 reviewbtn' 
+          onClick={() => navigate('/zoomcar')}
+          >
+          ◁   Back</button>
+        </div>
     <div className='ReadReview'>
-      {reviews && reviews.length > 0 ? (
-        reviews.map((item, index) => (
-          <div className='review-card' key={index}>
-            <div className='name'><b>User:</b> {item.user.username}</div>
-            <div className='vehicle'><b>Vehicle:</b> {item.vehicle.brand}</div>
-            <div className='rating'><b>Rating:</b> {item.rating} <i className="fa fa-star" aria-hidden="true"></i> </div>
-            <div className='comment'><b>Comment:</b>: {item.comment}</div>
-            <div className='back-button'>
-              <button onClick={() => navigate('/zoomcar')}>Back</button>
-            </div>
-          </div>
-        ))
-      ) : (
-        <Skeleton active />
-      )}
+      
+     
+
+      <div className='table-container'>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">S.no</th>
+            <th scope="col">User</th>
+            <th scope="col">Rating [5]</th>
+            <th scope="col">Comment</th>           
+          </tr>
+        </thead>
+        <tbody>
+          {reviews.map((item, index) => (
+            <tr className='singleRow' key={index}>
+              <td>{index + 1}</td>
+              <td>{item.user.username}</td>
+              <td>
+                {
+                  Array(item.rating)
+                    .fill()
+                    .map((_, i) => (
+                      <i className="fa fa-star" style={{color:"yellow"}} aria-hidden="true"></i>
+                    ))
+                }
+                </td>
+              <td>{item.comment}</td>
+              
+            </tr>
+            
+            
+          ))}
+         
+        </tbody>
+      </table>
+      </div>
+    </div>
     </div>
   );
 }

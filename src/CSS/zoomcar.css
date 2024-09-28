@@ -89,7 +89,6 @@
 .bookinkCart button {
     position: absolute;
     font-size: 1vw;
-    background-color: rgba(255, 0, 0, 0.795);
     bottom: 9%;
 }
 
@@ -264,30 +263,52 @@
 
 .productButton {
     display: flex;
-    justify-content: end;
+    justify-content:space-around;
     width: 100%;
-    height: 25%;
+    height: 20%;
     font-size: large;
 }
 
+
 .productButton button {
-    background-color: red;
-    color: azure;
-    margin-top: 5%;
+    border: black 0.1em 0.1em 0.1em;
+    background-color: rgba(236, 146, 2, 0.918);
+    margin: 2%;
     height: 70%;
-    width: 50%;
+    width: 45%;
     border: 10%;
     border-radius: 10px;
+    box-shadow: rgb(230, 11, 241) 0.1em 0.1em 0.1em;
+    color: azure;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .productButton button:hover {
-    background-color: rgba(236, 146, 2, 0.918);
-    margin-top: 5%;
-    height: 70%;
-    width: 50%;
-    border: 10%;
+    background-color: rgb(240, 236, 14);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    box-shadow: black 0.1em 0.1em 0.1em;
 }
-
+.btnBookNow{
+    background-color: red !important;
+}
+.btnBookNow:hover{
+    background-color: rgb(64, 89, 253) !important;
+    color: white;
+}
+.zoomBookingNav{
+    background-color: red !important;
+    border: blue 1px solid;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: rgb(243, 196, 246) 0.1em 0.1em 0.16em;
+}
+.zoomBookingNav:hover{
+    transition: 0.5s;
+    background-color: rgb(64, 140, 253) !important;
+    color: white;
+    box-shadow: rgb(210, 249, 110) 0.1em 0.1em 0.1em;
+}
 
 
 @media screen and (max-width: 992px) {
