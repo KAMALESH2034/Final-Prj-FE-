@@ -26,19 +26,22 @@ export function LoginForm() {
     return (
         <>
             <Row>
-                <Col lg={24} xs={24}>
+                <Col lg={24} xs={24} className="login-form-container">
                     <div className="LoginFormpage">
-                        <div className="loginheading">
-                            <p>ZOOM CAR </p>
-                            
-                        </div>
-                        <div className="loginSubheading">
-                        <p>Enter details to login/sign-up</p>
-                        </div>
+                        
+                    
                         
                         <div className="loginform">
+                            <div className="loginheading">
+                                <h1>Self-Drive Car Rentals in Chennai</h1>
+                                <h3> Book your drive now! </h3>
+                                
+                            </div>
+                            <div className="loginSubheading">
+                                <p>Enter details to login/sign-up</p>
+                            </div>
                             <Form onFinish={onFinish} name="normal_login"
-                                className="login-form"
+                                className="login-form col-md-3 col-sm-10 col-xs-10"
                                 initialValues={{
                                     remember: true,
                                 }}  >
@@ -50,23 +53,27 @@ export function LoginForm() {
                                         message: "Please enter the EmailID" 
                                     }]}
                                 >
-                                    <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email" />
+                                    <Input className="login-inp" prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Email" />
                                 </Form.Item>
 
                                 <Form.Item name="password" className="loginPassword"
                                     rules={[{ required: true, message: "Please enter the valid Password" }]}
                                 >
                                     <Input
+                                    className="login-inp"
                                         prefix={<LockOutlined className="site-form-item-icon" />}
                                         type="password"
                                         placeholder="Password"
                                     />
                                 </Form.Item>
-                                <Form.Item>
-                                    <Button type="primary" htmlType="submit" className="login-form-button">
+                                <Form.Item className="loginButton">
+                                    <Button type="primary"
+                                     htmlType="submit" 
+                                     className="login-form-button">
                                         Log in
-                                    </Button>
-                                    Or <a href="" onClick={() => navigate("/register")} className="registernow" >register now!</a>
+                                    </Button><br/>
+                                    <span className="or">or.</span> &nbsp;
+                                    <a href="" onClick={() => navigate("/register")} className="registernow" >register now!</a>
                                 </Form.Item>
                             </Form>
                         </div>

@@ -35,7 +35,11 @@ export function Register() {
                             <p>WELCOME TO ZOOM CAR </p>
                         </div>
                         <div className="registerform">
-                            <Form onFinish={onFinish}>
+                            <div className="loginSubheading">
+                                    <p>Enter details to Register</p>
+                                </div>
+                            <Form onFinish={onFinish}
+                            className="col-md-3 col-sm-10 col-xs-10">
                                 <Form.Item
                                     
                                     name="username"
@@ -44,7 +48,9 @@ export function Register() {
                                         { required: true, message: "Please enter a Username" }
                                     ]}
                                 >
-                                    <Input placeholder="Username" />
+                                    <Input 
+                                    className="login-inp"
+                                    placeholder="Username" />
                                 </Form.Item>
 
                                 <Form.Item
@@ -56,7 +62,9 @@ export function Register() {
                                         { type: "email", message: "Please enter a valid Email" },
                                     ]}
                                 >
-                                    <Input placeholder="Email" />
+                                    <Input 
+                                    className="login-inp"
+                                    placeholder="Email" />
                                 </Form.Item>
 
                                 <Form.Item
@@ -67,7 +75,9 @@ export function Register() {
                                         { required: true, message: "Please select your role a Password" },
                                     ]}
                                 >
-                                    <Input.Password placeholder="Password" />
+                                    <Input.Password 
+                                    className="login-inp"
+                                    placeholder="Password" />
                                 </Form.Item>
 
                                 <Form.Item

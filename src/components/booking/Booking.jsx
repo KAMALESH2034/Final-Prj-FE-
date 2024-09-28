@@ -4,7 +4,7 @@ import { Bookingpage } from "./Bookingpage";
 import { ReadBooking } from "./ReadBooking";
 import { EditBooking } from "./EditBooking";
 import { useSelector } from "react-redux";
-import iconSvg from "../../assets/icon.svg"
+import iconSvg from "../../assets/zooMLogo.png"
 
 
 export function Booking() {
@@ -16,8 +16,10 @@ export function Booking() {
             <div className="booking-nav">
                 <button onClick={() => navigate("/zoomcar")} ><i className="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
                 <img src={iconSvg} alt="" />
-                <p>ZOOM CAR</p>
-                <button onClick={() => {
+                
+                <button
+                className="booking-nav-btn"
+                onClick={() => {
                     if (cartItem.length !== 0) {
                         navigate("/booking/read-booking")
                     }

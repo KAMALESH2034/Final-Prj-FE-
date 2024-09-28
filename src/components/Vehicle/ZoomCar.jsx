@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { brand, tree, category, price, year, model } from "./data.jsx"
 import { useSelector } from "react-redux";
 import iconSvg from "../../assets/icon.svg"
+import ZooMLogo from "../../assets/zooMLogo.png"
 
 const { Header, Sider, Content } = Layout;
 
@@ -135,6 +136,7 @@ export function ZoomCar() {
               <Layout className="layoutStyle">
                 <Sider width="15%"  className="siderStyle" >
                   <p>Filter</p>
+                  <hr/>
                   <TreeSelect
                     className="filtering"
                     value={filtervalue}
@@ -150,15 +152,13 @@ export function ZoomCar() {
                 </Sider>
                 <Layout>
                   <Header className="headerStyle" >
-                    <img src={iconSvg} className=" nav_logo" />
+                    <img src={ZooMLogo} className=" nav_logo" />
                     <div className="search_box">
                       <div className="search-input">
                         <input type="text" placeholder="Search your desire car here" value={search} onChange={handleSearch} />
                       </div>
                     </div>
-                    <div className="headings">
-                      <p>ZOOM CAR</p>
-                    </div>
+                    
                     <div className="bookinkCart">
                       <button type="button" className="btn btn-primary position-relative" onClick={() => {
                         if (cartItem.length == 0) {
@@ -194,12 +194,12 @@ export function ZoomCar() {
                               <div className="review-button">
                                 <button  className="btn btn-outline-success"
                                 onClick={() => haldleReview(res)} 
-                                ><u>reviews ⭐</u></button>
+                                >reviews ⭐</button>
                               </div>
                             </div>
                             <div className="year-catego-price">
                               <div className="productYear"><b>YEAR</b> - <p><b>{res.year}</b></p></div>
-                              <div className="productCategory"><b>{res.category}</b></div>
+                              <div className="productCategory"><b>Model</b> - <p><b>{res.category}</b></p></div>
                               <div className="productPriceperday"><b>RENT PER DAY</b> -  <i className="fa fa-inr" aria-hidden="true"> <b>{res.pricePerDay}</b></i></div>
                               <div className="productButton">
                                 <button onClick={() => handelBooknow(res)} >Book Now</button>
