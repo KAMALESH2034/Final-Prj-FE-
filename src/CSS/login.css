@@ -1,13 +1,16 @@
+
 .login-form-container{
     background-image: url("../assets/login_img.svg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .LoginFormpage {
     height: 70vh;
     width: 100%;
+    
     
 }
 

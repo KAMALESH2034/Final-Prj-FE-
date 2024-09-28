@@ -53,12 +53,13 @@
 }
 
 .review-form {
+    margin-top: -10%;
     position: relative;
     width:40%;
     background: #e8e5fc;
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     transform-origin: center bottom;
@@ -67,14 +68,13 @@
 }
 
 .vehicle-name {
-    background-color: black;
+    background-color: rgb(62, 60, 60);
     text-align: center;
     color: antiquewhite;
-    padding: 5%;
+    padding: 3%;
     font-size: 25px;
     font-weight: 700;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 
 }
 

@@ -56,8 +56,18 @@ export function Reviewpage() {
     }
 
     return (
+        <>
+        <div className='review-heading p-3'>
+                <button 
+                className='btn btn-dark px-4 reviewbtn' 
+                onClick={() => navigate(-1)}
+                >
+                ◁   Back</button>
+            </div>
         <div className="review-content">
+            
             <div className="review-vehicle">
+                
                 <Form {...formlayout}
                     className="review-form"
                     onFinish={handlesubmit}
@@ -109,6 +119,8 @@ export function Reviewpage() {
                 </Form>
             </div>
         </div>
+        </>
+        
     )
 }
 

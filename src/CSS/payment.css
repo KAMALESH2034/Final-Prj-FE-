@@ -18,7 +18,7 @@
 .payment-form {
     position: relative;
     width:25%;
-    background: #edf3ee;
+    background: #e6f7fc;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 2px 5px 8px rgba(166, 173, 239, 0.792);
@@ -156,6 +156,15 @@
 
 .paymentcurrency label b {
     color: rgb(12, 12, 12);
+    
+}
+.paymentcurrency select {
+    color: rgb(63, 115, 247);
+    font-weight: 700;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    border: 2px solid #fcf82c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .paymentButton {
@@ -169,7 +178,10 @@
     cursor: pointer;
     text-decoration: none;
     background-color: blue;
+    font-size: 16px;
+    font-weight: 700;
     color: white;
+    box-shadow: rgb(101, 4, 121) 3px 3px 4px;
     border: none;
     padding: 3%;
     border-radius: 10px;
@@ -181,8 +193,8 @@
     height: 20%;
     cursor: pointer;
     text-decoration: none;
-    background-color: rgb(66, 179, 6);
-    box-shadow: rgb(255, 0, 225) 0 0 4px;
+    background-color: rgb(8, 211, 35);
+    box-shadow: rgb(255, 0, 225) 3px 3px 4px;
     color: white;
     border: none;
     padding: 3%;
