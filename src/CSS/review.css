@@ -1,6 +1,8 @@
 .reviewgpage {
     width: 100%;
     height: 100vh;
+    background: rgb(194,253,252);
+background: linear-gradient(0deg, rgba(194,253,252,1) 1%, rgba(250,236,246,0.6812850140056023) 95%);
    
 }
 

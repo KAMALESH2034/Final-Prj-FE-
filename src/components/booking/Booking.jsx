@@ -16,7 +16,7 @@ export function Booking() {
             <div className="booking-nav">
                 <button onClick={() => navigate("/zoomcar")} ><i className="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
                 <img src={iconSvg} alt="" />
-                
+                <p> </p>
                 <button
                 className="booking-nav-btn"
                 onClick={() => {

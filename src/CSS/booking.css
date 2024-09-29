@@ -1,7 +1,7 @@
 body{
-    background: rgb(249,233,245);
-background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(147,252,251,0.5664390756302521) 98%);
-}
+    background: rgb(194,253,252);
+background: linear-gradient(0deg, rgba(194,253,252,1) 1%, rgba(250,236,246,0.6812850140056023) 95%);
+  }
 
 .bookingpage {
     width: 100%;
@@ -74,7 +74,7 @@ background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(
     background: #cae6df;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     transform-origin: center bottom;
@@ -116,6 +116,13 @@ background: linear-gradient(90deg, rgba(249,233,245,0.885766806722689) 1%, rgba(
 
 .button-submit {
     background-color: rgb(232, 9, 229);
+    
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    box-shadow: blueviolet 0.04em 0.06em 0.1em;
+    transition: background-color 0.3s;
+    
     color: beige;
 }
 
