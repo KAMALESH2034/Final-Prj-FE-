@@ -68,7 +68,7 @@ export function ReadReview() {
                   Array(item.rating)
                     .fill()
                     .map((_, i) => (
-                      <i className="fa fa-star" style={{color:"yellow"}} aria-hidden="true"></i>
+                      <i className="fa fa-star" style={{color:"#FFD700"}} aria-hidden="true"></i>
                     ))
                 }
                 </td>
